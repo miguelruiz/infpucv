@@ -1,0 +1,57 @@
+
+\documentclass[12pt,oneside]{book}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{graphicx}  
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{top=2.5cm, left=3cm, right=3cm, bottom=2.5cm, headsep=1cm,footskip=1.5cm}
+\usepackage{setspace}
+
+\setlength\textheight{22.5cm} 
+
+\singlespacing
+\usepackage[bookmarks=false, colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+
+\usepackage{charter}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{ifpdf}
+\usepackage{graphics}
+\usepackage[Lenny]{fncychap}
+\usepackage{caption}
+
+
+\usepackage{natbib}
+\makeatletter
+\renewcommand\bibsection
+{
+    \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}
+}
+\makeatother
+
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyfoot[R]{\thepage}}
+
+\begin{document}
+
+\include{000-portada1}
+\include{000-portada2}
+\include{000-dedicatoria1}
+\include{000-dedicatoria2}
+\include{000-agradecimientos1}
+\include{000-agradecimientos2}
+\include{000-resumen_es}
+\include{000-resumen_en}
+\include{000-indices}
+\include{000-secciones}
+\pagestyle{fancy}
+\include{capitulo_X}
+\include{anexos}
+
+\end{document}
